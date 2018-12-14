@@ -1,0 +1,67 @@
+{
+    "success": true,
+    "data": {
+        "topicList": [
+            {
+                "id": 1,
+                "title": "社会热点",
+                "imgUrl": "//upload-images.jianshu.io/upload_images/3466919-87c849a077f40d35.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+                "id": 2,
+                "title": "PHP",
+                "imgUrl": "//upload-images.jianshu.io/upload_images/13377572-74888604753595af.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            }
+        ],
+        "articleList": [
+            {
+                "id": 1,
+                "title": "Vue复用Echart，动态更新数据视图",
+                "desc": "Echart ECharts ，一个使用 JavaScript 实现的开源可视化库，可以流畅的运行在 PC 和移动设备上，兼容当前绝大部分浏览器...",
+                "imgUrl": "//upload-images.jianshu.io/upload_images/4578791-1e8b0dad7aa6f820.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+                "id": 2,
+                "title": "一个人的气质，真的是天生的么？",
+                "desc": "1、性格和气质 性格和气质，我们平常经常搞不清两者的区别。 这人性格温和，那人气质稳重，听起来并没有什么区别。 区别两个事物最直接的方法，就是先...",
+                "imgUrl": "//upload-images.jianshu.io/upload_images/4743912-ca7f624d465b9e9c.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+                "id": 3,
+                "title": "请不要再把“内向”当作一种性格弱点",
+                "desc": "你是一个外向的人吗？或者，你是一个内向的人吗？人们总习惯用内向或者外向描述一个人的性格。在一般人眼中，内向是一种弱点，对“内向者”有很多认...",
+                "imgUrl": "//upload-images.jianshu.io/upload_images/4657234-b258925e7c911e3f.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+                "id": 4,
+                "title": "大学三年我考了八个证书，还攒钱买了单反",
+                "desc": "老乡一个妈妈同事家的孩子也报考了我所在的大学。等她安顿好，我们坐在楼下书吧里聊天。 我从她眼睛里仿佛看到了我大一入学时候的样子——真是急切的想要...",
+                "imgUrl": "//upload-images.jianshu.io/upload_images/5115209-ff8dc2b6092b5935.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            }
+           
+        ],
+        "recommendList": [
+            {
+                "id": 1,
+                "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-3-7123fd94750759acf7eca05b871e9d17.png"
+            },
+            {
+                "id": 2,
+                "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-4-b70da70d679593510ac93a172dfbaeaa.png"
+            },
+            {
+                "id": 3,
+                "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png"
+            },
+            {
+                "id": 4,
+                "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png"
+            },
+            {
+                "id": 5,
+                "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"
+            }
+        ]
+       
+    }
+}
