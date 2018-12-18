@@ -1,0 +1,12 @@
+{
+    "success": true,
+    "data": {
+        "title": "网页中的登录注册功能是如何实现的",
+        "author": {
+            "imgUrl": "https://upload.jianshu.io/users/upload_avatars/11827773/5a8d1880-f335-49b7-82e4-2e73df43d06b?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96",
+            "name": "EnochQin",
+            "info": "2018.08.21 16:41* 最后编辑于 2018.08.22 16:32 字数 1465 阅读 2458评论 4喜欢 68"
+        },
+        "content": "<img src='https://upload-images.jianshu.io/upload_images/11827773-02406eae008e74ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp' alt=''/><p><strong>摘要：</strong>登录注册是一个网站最常用的也是最基本的功能，本文就来详细的介绍一下在网页中，实现这两个最基本的需求从后端到前端需要做些什么。<br/><br/>注：本文所提到的所有代码都已上传至github ，可以直接clone后在终端使用测试。</p><h2>一、前置知识：</h2><p>基础知识可见我之前的博客：HTTP入门（请求与响应的基本知识） 。首先我们至少需要了解HTTP最基本的request请求和response响应的相关概念。<br/>再看一下服务端和客户端之间的交互，如下图：</p>"
+    }
+}

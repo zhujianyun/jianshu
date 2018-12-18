@@ -1,24 +1,31 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
+import { Link } from 'react-router-dom';
 import { ListWrapper, MoreList } from '../style' ;
 import { connect } from 'react-redux';
 import { action } from '../store';
-class List extends Component {
+class List extends PureComponent {
   render() {
     const { list, page, getMoreList } = this.props;
     return (
       <ListWrapper>
       {
         list.map((item) => (
-          <div className='list-item' key={item.get('id')}>
-          <img 
-          src={item.get('imgUrl')}
-          className='list-pic'
-          alt=''/>
-          <div className='list-info'>
-          <h3 className='article-title'>{item.get('title')}</h3>
-          <p className='article-content'>{item.get('desc')}</p>
-          </div>
-          </div>
+          // <Link to={'/detail/' + item.get('id')} key={item.get('id')}>
+          // <Link to={'/detail?id=' + item.get('id')} key={item.get('id')}>
+          // <Link to={{pathname: '/detail', query: {id: item.get('id')}}} key={item.get('id')}>
+
+          <Link to={{pathname: '/detail', state: {id: item.get('id')}}} key={item.get('id')}>
+            <div className='list-item'>
+            <img 
+              src={item.get('imgUrl')}
+              className='list-pic'
+              alt=''/>
+            <div className='list-info'>
+              <h3 className='article-title'>{item.get('title')}</h3>
+              <p className='article-content'>{item.get('desc')}</p>
+              </div>
+            </div>
+          </Link>
         ))
       }
       <MoreList onClick={ () => getMoreList(page)}>阅读更多</MoreList>

@@ -9,7 +9,7 @@ export const HeaderWrapper = styled.div`
     border-bottom: 1px solid #f0f0f0;
     position: relative;
 `;
-export const Logo = styled.a`
+export const Logo = styled.div`
     position: absolute;
     left: 0;
     right: 0;
@@ -119,6 +119,7 @@ export const SearchInfo = styled.div`
     box-shadow: 0 0 8px rgba(0, 0, 0, .2);
     border-radius: 4px;
     background: #fff;
+    z-index: 1;
 `;
 export const SearchInfoTitle = styled.p`
     margin-top: 20px;

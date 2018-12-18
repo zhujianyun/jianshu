@@ -13,6 +13,7 @@ export const BackTop = styled.div`
     line-height: 50px;
     text-align: center;  
     border: 1px solid #dcdcdc;
+    cursor: pointer;
 `;
 export const HomeLeft = styled.div`
     float: left;

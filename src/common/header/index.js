@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { toJS } from 'immutable';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 import { actionCreators } from './store';
+import { action as loginAction } from '../../pages/login/store';
 import { 
     HeaderWrapper,
     Logo,
@@ -18,20 +20,27 @@ import {
     Addition,
     Button
  } from './style';
-import { constants } from 'fs';
+
 class Header extends Component {
     render() {
-        const { focused, list, handleInputFocus, handleInputBlur } = this.props;
+        const { focused, list, login, handleInputFocus, handleInputBlur, logOut } = this.props;
         return (
             <HeaderWrapper>
-                <Logo href="/"></Logo>
+                <Link to='/'>
+                    <Logo></Logo>
+                </Link>
                 <Nav>
                     <NavItem className="left active">首页</NavItem>
                     <NavItem className="left">下载APP</NavItem>
                     <NavItem className="right">
                         <i className="iconfont">&#xe602;</i>
                     </NavItem>
-                    <NavItem className="right">登录</NavItem>
+                    {
+                        login ? 
+                        <NavItem className="right" onClick={logOut}>退出</NavItem> : 
+                        <Link to='/login'><NavItem className="right">登录</NavItem></Link>
+                    }
+                    
                     <SearchWrapper>
                         <CSSTransition
                             in={focused}
@@ -48,7 +57,7 @@ class Header extends Component {
                         {this.geteListArea()}
                     </SearchWrapper>
                     <Addition>
-                        <Button className='writing'><i className="iconfont">&#xe754;</i>写文章</Button>
+                        <Link to='/write'><Button className='writing'><i className="iconfont">&#xe754;</i>写文章</Button></Link>
                         <Button className="reg">注册</Button>
                     </Addition>
                 </Nav>
@@ -94,6 +103,7 @@ const mapStateToProps = (state) => ({
     list: state.getIn(['header', 'list']),
     page: state.getIn(['header', 'page']),
     totalPage: state.getIn(['header', 'totalPage']),
+    login: state.getIn(['login', 'login'])
 });
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -123,7 +133,11 @@ const mapDispatchToProps = (dispatch) => {
             }else {
                 dispatch(actionCreators.changePage(1));
             }
+        },
+        logOut() {
+            dispatch(loginAction.logout());
         }
+
     }
 }
 
